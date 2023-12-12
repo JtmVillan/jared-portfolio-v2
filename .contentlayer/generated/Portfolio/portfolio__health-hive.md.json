@@ -1,0 +1,29 @@
+{
+  "title": "Health Hive",
+  "date": "2023-06-08T00:00:00.000Z",
+  "slug": "health-hive",
+  "tags": [
+    "web app",
+    "full-stack "
+  ],
+  "image": {
+    "src": "/images/portfolio/portfolio-healthhive.png",
+    "width": 473,
+    "height": 332,
+    "type": "Image",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "undefined",
+    "html": "<p>undefined</p>"
+  },
+  "_id": "portfolio/health-hive.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/health-hive.md",
+    "sourceFileName": "health-hive.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/health-hive"
+  },
+  "type": "Portfolio"
+}

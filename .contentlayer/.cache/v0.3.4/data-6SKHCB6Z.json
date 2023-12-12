@@ -1,0 +1,140 @@
+{
+  "cacheItemsMap": {
+    "portfolio/cynthia-guzman.md": {
+      "document": {
+        "title": "Cynthia Guzman",
+        "date": "2023-11-24T00:00:00.000Z",
+        "slug": "cynthia-guzman",
+        "tags": [
+          "web design",
+          "frontend"
+        ],
+        "image": {
+          "src": "/images/portfolio/project-cynthiaguzman.png",
+          "width": 1061,
+          "height": 445,
+          "type": "Image",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "teehee here is where the body goes, in the content/portfolio section dumbass\n",
+          "html": "<p>teehee here is where the body goes, in the content/portfolio section dumbass</p>"
+        },
+        "_id": "portfolio/cynthia-guzman.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/cynthia-guzman.md",
+          "sourceFileName": "cynthia-guzman.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/cynthia-guzman"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1702357851415",
+      "hasWarnings": true,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/health-hive.md": {
+      "document": {
+        "title": "Health Hive",
+        "date": "2023-06-08T00:00:00.000Z",
+        "slug": "health-hive",
+        "tags": [
+          "web app",
+          "full-stack "
+        ],
+        "image": {
+          "src": "/images/portfolio/portfolio-healthhive.png",
+          "width": 473,
+          "height": 332,
+          "type": "Image",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "undefined",
+          "html": "<p>undefined</p>"
+        },
+        "_id": "portfolio/health-hive.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/health-hive.md",
+          "sourceFileName": "health-hive.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/health-hive"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1702353832316",
+      "hasWarnings": true,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/portfolio-v1.md": {
+      "document": {
+        "title": "Portfolio V1",
+        "date": "2023-11-09T00:00:00.000Z",
+        "slug": "portfolio-v1",
+        "tags": [
+          "web design",
+          "frontend"
+        ],
+        "image": {
+          "src": "/images/portfolio/portfolio-portfoliov1.png",
+          "width": 737,
+          "height": 315,
+          "type": "Image",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "undefined",
+          "html": "<p>undefined</p>"
+        },
+        "_id": "portfolio/portfolio-v1.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/portfolio-v1.md",
+          "sourceFileName": "portfolio-v1.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/portfolio-v1"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1702353832912",
+      "hasWarnings": true,
+      "documentTypeName": "Portfolio"
+    },
+    "portfolio/user-analysis.md": {
+      "document": {
+        "title": "User Analysis",
+        "date": "2023-06-01T00:00:00.000Z",
+        "slug": "user-analysis",
+        "tags": [
+          "web app",
+          "backend"
+        ],
+        "image": {
+          "src": "/images/portfolio/portfolio-useranalysis.png",
+          "width": 476,
+          "height": 332,
+          "type": "Image",
+          "_raw": {}
+        },
+        "body": {
+          "raw": "undefined",
+          "html": "<p>undefined</p>"
+        },
+        "_id": "portfolio/user-analysis.md",
+        "_raw": {
+          "sourceFilePath": "portfolio/user-analysis.md",
+          "sourceFileName": "user-analysis.md",
+          "sourceFileDir": "portfolio",
+          "contentType": "markdown",
+          "flattenedPath": "portfolio/user-analysis"
+        },
+        "type": "Portfolio"
+      },
+      "documentHash": "1702353831953",
+      "hasWarnings": true,
+      "documentTypeName": "Portfolio"
+    }
+  }
+}

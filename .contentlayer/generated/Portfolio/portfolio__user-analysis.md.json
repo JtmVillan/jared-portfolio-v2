@@ -1,0 +1,29 @@
+{
+  "title": "User Analysis",
+  "date": "2023-06-01T00:00:00.000Z",
+  "slug": "user-analysis",
+  "tags": [
+    "web app",
+    "backend"
+  ],
+  "image": {
+    "src": "/images/portfolio/portfolio-useranalysis.png",
+    "width": 476,
+    "height": 332,
+    "type": "Image",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "undefined",
+    "html": "<p>undefined</p>"
+  },
+  "_id": "portfolio/user-analysis.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/user-analysis.md",
+    "sourceFileName": "user-analysis.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/user-analysis"
+  },
+  "type": "Portfolio"
+}

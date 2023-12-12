@@ -1,0 +1,29 @@
+{
+  "title": "Portfolio V1",
+  "date": "2023-11-09T00:00:00.000Z",
+  "slug": "portfolio-v1",
+  "tags": [
+    "web design",
+    "frontend"
+  ],
+  "image": {
+    "src": "/images/portfolio/portfolio-portfoliov1.png",
+    "width": 737,
+    "height": 315,
+    "type": "Image",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "undefined",
+    "html": "<p>undefined</p>"
+  },
+  "_id": "portfolio/portfolio-v1.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/portfolio-v1.md",
+    "sourceFileName": "portfolio-v1.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/portfolio-v1"
+  },
+  "type": "Portfolio"
+}

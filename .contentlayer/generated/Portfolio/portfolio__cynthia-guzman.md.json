@@ -1,0 +1,29 @@
+{
+  "title": "Cynthia Guzman",
+  "date": "2023-11-24T00:00:00.000Z",
+  "slug": "cynthia-guzman",
+  "tags": [
+    "web design",
+    "frontend"
+  ],
+  "image": {
+    "src": "/images/portfolio/project-cynthiaguzman.png",
+    "width": 1061,
+    "height": 445,
+    "type": "Image",
+    "_raw": {}
+  },
+  "body": {
+    "raw": "teehee here is where the body goes, in the content/portfolio section dumbass\n",
+    "html": "<p>teehee here is where the body goes, in the content/portfolio section dumbass</p>"
+  },
+  "_id": "portfolio/cynthia-guzman.md",
+  "_raw": {
+    "sourceFilePath": "portfolio/cynthia-guzman.md",
+    "sourceFileName": "cynthia-guzman.md",
+    "sourceFileDir": "portfolio",
+    "contentType": "markdown",
+    "flattenedPath": "portfolio/cynthia-guzman"
+  },
+  "type": "Portfolio"
+}
