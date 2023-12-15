@@ -2,26 +2,190 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  color: var(--text-100);
+  background: var(--background-900);
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
 }
 
-@media (prefers-color-scheme: dark) {
+h1, h2, h3 {
+  font-family: var(--satoshi-font);
+}
+
+h1{
+  font-weight:900;
+  font-size: 128px;
+  text-transform: uppercase;
+  color: var(--primary-400);
+}
+
+h2{
+  font-weight: 700;
+  font-size: 90px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 51px;
+}
+
+.tech-icon {
+  @apply h-11 w-11 fill-text-50 hover:fill-secondary-400 ease-in-out duration-300;
+}
+
+.social-icon {
+  @apply fill-text-50 hover:fill-accent-400 ease-in-out duration-150  h-8 w-8;
+}
+
+hgroup {
+  @apply flex flex-col;
+}
+
+p {
+  font-family: var(--clash-font);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.nav-link {
+  @apply hover:text-primary-400 ease-in-out duration-150;
+}
+
+.form-text-input {
+  @apply w-96 h-12 active:border-transparent focus:border-transparent border-b-2 bg-transparent p-4;
+}
+
+.form-text-area {
+  @apply w-96 h-48 active:border-transparent focus:border-transparent focus:ring-0 border-b-2 bg-transparent p-4; 
+}
+
+
+
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text-50: #f0f2f5;
+    --text-100: #e0e6eb;
+    --text-200: #c2ccd6;
+    --text-300: #a3b3c2;
+    --text-400: #8599ad;
+    --text-500: #667f99;
+    --text-600: #52667a;
+    --text-700: #3d4c5c;
+    --text-800: #29333d;
+    --text-900: #14191f;
+    --text-950: #0a0d0f;
+    
+    --background-50: #f0f2f5;
+    --background-100: #e0e6eb;
+    --background-200: #c2ccd6;
+    --background-300: #a3b3c2;
+    --background-400: #8599ad;
+    --background-500: #667f99;
+    --background-600: #52667a;
+    --background-700: #3d4c5c;
+    --background-800: #29333d;
+    --background-900: #14191f;
+    --background-950: #0a0d0f;
+    
+    --primary-50: #eafbf5;
+    --primary-100: #d5f6eb;
+    --primary-200: #aaeed7;
+    --primary-300: #80e5c3;
+    --primary-400: #56dcaf;
+    --primary-500: #2bd49c;
+    --primary-600: #23a97c;
+    --primary-700: #1a7f5d;
+    --primary-800: #11553e;
+    --primary-900: #092a1f;
+    --primary-950: #041510;
+    
+    --secondary-50: #eafafa;
+    --secondary-100: #d5f6f4;
+    --secondary-200: #abede9;
+    --secondary-300: #82e3df;
+    --secondary-400: #58dad4;
+    --secondary-500: #2ed1c9;
+    --secondary-600: #25a7a1;
+    --secondary-700: #1c7d79;
+    --secondary-800: #125450;
+    --secondary-900: #092a28;
+    --secondary-950: #051514;
+    
+    --accent-50: #eafbf5;
+    --accent-100: #d5f6eb;
+    --accent-200: #aaeed7;
+    --accent-300: #80e5c3;
+    --accent-400: #56dcaf;
+    --accent-500: #2bd49c;
+    --accent-600: #23a97c;
+    --accent-700: #1a7f5d;
+    --accent-800: #11553e;
+    --accent-900: #092a1f;
+    --accent-950: #041510;
+    
+  }
+  .dark {
+    --text-50: #0a0d0f;
+    --text-100: #14191f;
+    --text-200: #29333d;
+    --text-300: #3d4c5c;
+    --text-400: #52667a;
+    --text-500: #667f99;
+    --text-600: #8599ad;
+    --text-700: #a3b3c2;
+    --text-800: #c2ccd6;
+    --text-900: #e0e6eb;
+    --text-950: #f0f2f5;
+    
+    --background-50: #0a0d0f;
+    --background-100: #14191f;
+    --background-200: #29333d;
+    --background-300: #3d4c5c;
+    --background-400: #52667a;
+    --background-500: #667f99;
+    --background-600: #8599ad;
+    --background-700: #a3b3c2;
+    --background-800: #c2ccd6;
+    --background-900: #e0e6eb;
+    --background-950: #f0f2f5;
+    
+    --primary-50: #041510;
+    --primary-100: #092a1f;
+    --primary-200: #11553e;
+    --primary-300: #1a7f5d;
+    --primary-400: #23a97c;
+    --primary-500: #2bd49c;
+    --primary-600: #56dcaf;
+    --primary-700: #80e5c3;
+    --primary-800: #aaeed7;
+    --primary-900: #d5f6eb;
+    --primary-950: #eafbf5;
+    
+    --secondary-50: #051514;
+    --secondary-100: #092a28;
+    --secondary-200: #125450;
+    --secondary-300: #1c7d79;
+    --secondary-400: #25a7a1;
+    --secondary-500: #2ed1c9;
+    --secondary-600: #58dad4;
+    --secondary-700: #82e3df;
+    --secondary-800: #abede9;
+    --secondary-900: #d5f6f4;
+    --secondary-950: #eafafa;
+    
+    --accent-50: #041510;
+    --accent-100: #092a1f;
+    --accent-200: #11553e;
+    --accent-300: #1a7f5d;
+    --accent-400: #23a97c;
+    --accent-500: #2bd49c;
+    --accent-600: #56dcaf;
+    --accent-700: #80e5c3;
+    --accent-800: #aaeed7;
+    --accent-900: #d5f6eb;
+    --accent-950: #eafbf5;
+    
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */

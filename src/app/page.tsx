@@ -1,113 +1,253 @@
+import { Form } from '@/components/Form'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className='grid grid-rows gap-40'>
+      <section id="landing" className='flex flex-col justify-center h-screen'>
+        <div className="grid grid-rows-2">
+          <h1 className="text-start">
+            jared
+          </h1>
+          <h1 className="text-end">
+            villanueva
+          </h1>
         </div>
-      </div>
+        
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section id="about">
+        <div className="grid grid-cols-2 mb-20">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>about me</h1>
+        </div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className=''>
+            <Image 
+              src="/images/about-img.webp" 
+              alt="about-img"
+              width={500}
+              height={700} 
+              className='rounded-lg'
+            />
+          </div>
+          <article className=''>
+            <h3 className='px-4 my-6'>
+              web developer
+            </h3>
+            <div className='grid grid-cols-1 gap-12'>
+              <p className='px-4'>
+                I’m an independent developer based in San Diego, California <span>☀️</span>. 
+                This year, I graduated with a bachelors in <span className='text-secondary-500'>computer engineering </span>
+                from UCSD <span>🎓</span>, and since then I’ve been learning and improving my 
+                frontend skills through personal projects.
+              </p>
+              <p className='px-4'>
+                But when I’m not developing, you can find me lifting in the gym <span>💪🏽</span>, 
+                reading books or indulging in music <span>🎧</span> or video games.
+              </p>
+              <div className='flex flex-row gap-5 px-4'>
+                <a href="#" className='btn btn-outline btn-secondary'>read more</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vTE7W7nqEEPUj01e2VXRrpprTbHiVXvN6E6rX3rYAuyXtWuVdjhhyrSfXc9-fRVrA/pub" 
+                  className='btn btn-outline btn-secondary'
+                  target="_blank" rel="noopener noreferrer">
+                  resume
+                </a>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section id="skills">
+        <div className="grid grid-cols-10 justify-stretch gap-4 mb-20">
+          <h1 className='col-span-5 font-bold text-8xl text-end'>skills</h1>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        {/* my niche */}
+        <div className='grid grid-cols-10 justify-stretch gap-4 py-10'>
+          <h2 className='col-span-5 flex flex-col gap-2 text-end'>my niche</h2>
+          <article className='col-span-5 flex flex-col gap-12'>
+            <p className='px-4'>
+              Coming from  a background in both hardware and software <span>⚒️</span>, 
+              I have a solid understanding and practice in designing 
+              systems and building data structures, all while following 
+              the agile software development cycle.
+            </p>
+            <p className='px-4'>
+              Inspired by my courses in human-computer interaction, 
+              product engineering and web development <span>💻</span>, I’ve recently 
+              spent more emphasis on learning frontend frameworks 
+              and fundamental UI/UX design practices <span>📱</span>.
+            </p>
+          </article>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        {/* my tech-stack */}
+        <div className='grid grid-cols-10 justify-stretch gap-4 py-10'>
+          <h2 className='text-end col-span-5'>my tech </h2>
+          <article className='col-span-5 flex flex-col gap-10 pt-5 px-4'>
+            {/* frontend */}
+            <hgroup >
+              <h3 className='pb-4'>frontend</h3>
+              <div className='grid grid-cols-5 gap-y-4 justify-items-center'>
+                <div className="tooltip tooltip-bottom" data-tip="HTML5">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                  <path d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387L118.968 2H9.032zm89.126 26.539l-.627 7.172L97.255 39H44.59l1.257 14h50.156l-.336 3.471-3.233 36.119-.238 2.27L64 102.609v.002l-.034.018-28.177-7.423L33.876 74h13.815l.979 10.919L63.957 89H64v-.546l15.355-3.875L80.959 67H33.261l-3.383-38.117L29.549 25h68.939l-.33 3.539z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="CSS">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626L119.24 1H8.76zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336L64 101.607v.001l-.022.019-28.311-7.888L33.75 72h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229L81.075 65H48.792l-.277-3.043-.631-7.129L47.553 51h34.749l1.264-14H30.64l-.277-3.041-.63-7.131L29.401 23h69.281l-.331 3.862z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Javascript">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M2 1v125h125V1H2zm66.119 106.513c-1.845 3.749-5.367 6.212-9.448 7.401-6.271 1.44-12.269.619-16.731-2.059-2.986-1.832-5.318-4.652-6.901-7.901l9.52-5.83c.083.035.333.487.667 1.071 1.214 2.034 2.261 3.474 4.319 4.485 2.022.69 6.461 1.131 8.175-2.427 1.047-1.81.714-7.628.714-14.065C58.433 78.073 58.48 68 58.48 58h11.709c0 11 .06 21.418 0 32.152.025 6.58.596 12.446-2.07 17.361zm48.574-3.308c-4.07 13.922-26.762 14.374-35.83 5.176-1.916-2.165-3.117-3.296-4.26-5.795 4.819-2.772 4.819-2.772 9.508-5.485 2.547 3.915 4.902 6.068 9.139 6.949 5.748.702 11.531-1.273 10.234-7.378-1.333-4.986-11.77-6.199-18.873-11.531-7.211-4.843-8.901-16.611-2.975-23.335 1.975-2.487 5.343-4.343 8.877-5.235l3.688-.477c7.081-.143 11.507 1.727 14.756 5.355.904.916 1.642 1.904 3.022 4.045-3.772 2.404-3.76 2.381-9.163 5.879-1.154-2.486-3.069-4.046-5.093-4.724-3.142-.952-7.104.083-7.926 3.403-.285 1.023-.226 1.975.227 3.665 1.273 2.903 5.545 4.165 9.377 5.926 11.031 4.474 14.756 9.271 15.672 14.981.882 4.916-.213 8.105-.38 8.581z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Typescript">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M2 63.91v62.5h125v-125H2zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1A23 23 0 0180 109.19c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73l4.6-2.64 3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H57.16v46.23H45.65V69.26H29.38v-5a49.19 49.19 0 01.14-5.16c.06-.08 10-.12 22-.1h21.81z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="React">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <g><circle cx="64" cy="64" r="11.4"></circle><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path></g>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="NextJS">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="TailwindCSS">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"></path>
+                  </svg>
+                </div>
+              </div>
+            </hgroup>
+            {/* backend */}
+            <hgroup >
+              <h3 className='pb-4'>backend</h3>
+              <div className='grid grid-cols-5 gap-y-4 justify-items-center'>
+                <div className="tooltip tooltip-bottom" data-tip="Python">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 17.919 0 29.53C7.614 86.983 12.569 93 21.054 93H31V79.952C31 70.315 39.428 62 49.33 62zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.465 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 116.178 34 107.682 34H97v12.981C97 57.031 88.206 65 78.489 65H49.33C41.342 65 35 72.326 35 80.326v27.8c0 7.91 6.745 12.564 14.462 14.834 9.242 2.717 17.994 3.208 29.051 0C85.862 120.831 93 116.549 93 108.126V97H64v-4h43.682c8.484 0 11.647-5.776 14.599-14.66 3.047-9.145 2.916-17.799 0-29.529zm-41.955 55.606c3.027 0 5.479 2.479 5.479 5.547 0 3.076-2.451 5.579-5.479 5.579-3.015 0-5.478-2.502-5.478-5.579 0-3.068 2.463-5.547 5.478-5.547z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Java">
+                    <svg viewBox="0 0 128 128" className='tech-icon'>
+                      <path d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.351-6.874-3.351-10.897 2.06-15.952 2.222-25.844 1.092-8.164-.935-3.397-3.71-3.397-3.71zm33.189-10.46c-14.444 2.779-22.787 2.69-33.354 1.6-8.171-.845-2.822-4.805-2.822-4.805-21.137 7.016 11.767 14.977 41.309 6.336-3.14-1.106-5.133-3.131-5.133-3.131zm11.319-60.575c.001 0-42.731 10.669-22.323 34.187 6.024 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.793 15.634-29.58zm9.998 81.144s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.095.171-4.45-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.952-3.487-32.013 6.85-13.742 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM85 77.896c2.395-1.634 5.703-3.053 5.703-3.053s-9.424 1.685-18.813 2.474c-11.494.964-23.823 1.154-30.012.326-14.652-1.959 8.033-7.348 8.033-7.348s-8.812-.596-19.644 4.644C17.455 81.134 61.958 83.958 85 77.896zm5.609 15.145c-.108.29-.468.616-.468.616 31.273-8.221 19.775-28.979 4.822-23.725-1.312.464-2 1.543-2 1.543s.829-.334 2.678-.72c7.559-1.575 18.389 10.119-5.032 22.286zM64.181 70.069c-4.614-10.429-20.26-19.553.007-35.559C89.459 14.563 76.492 1.587 76.492 1.587c5.23 20.608-18.451 26.833-26.999 39.667-5.821 8.745 2.857 18.142 14.688 28.815zm27.274 51.748c-19.187 3.612-42.854 3.191-56.887.874 0 0 2.874 2.38 17.646 3.331 22.476 1.437 57-.8 57.816-11.436.001 0-1.57 4.032-18.575 7.231z"></path>
+                    </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="C">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.3.9 3.4l-.2.1c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.8 0-1.7-.4-2.6zM64 88.5c9.1 0 17.1-5 21.3-12.4l12.9 7.6c-6.8 11.8-19.6 19.8-34.2 19.8-21.8 0-39.5-17.7-39.5-39.5S42.2 24.5 64 24.5c14.7 0 27.5 8.1 34.3 20l-13 7.5C81.1 44.5 73.1 39.5 64 39.5c-13.5 0-24.5 11-24.5 24.5s11 24.5 24.5 24.5z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="C++">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M117.5 33.5l.3-.2c-.6-1.1-1.5-2.1-2.4-2.6L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.3.9 3.4l-.2.1c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c.1-.8 0-1.7-.4-2.6zM82 66v-4h5v-5h5v5h5v4h-5v5h-5v-5h-5zm3.3-14C81.1 44.5 73.1 39.5 64 39.5c-13.5 0-24.5 11-24.5 24.5s11 24.5 24.5 24.5c9.1 0 17.1-5 21.3-12.4l12.9 7.6c-6.8 11.8-19.6 19.8-34.2 19.8-21.8 0-39.5-17.7-39.5-39.5S42.2 24.5 64 24.5c14.7 0 27.5 8.1 34.3 20l-13 7.5zM115 66h-5v5h-4v-5h-6v-4h6v-5h4v5h5v4z"></path>
+                  </svg>
+                </div>
+              </div>
+            </hgroup>
+            {/* tools */}
+            <hgroup>
+              <h3 className='pb-4'>tools</h3>
+              <div className='grid grid-cols-5 gap-y-4 justify-items-center'>
+                <div className="tooltip tooltip-bottom" data-tip="Git">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Android Studio">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M25.1 17.7l13.4.1c-4.9 4.9-7.8 11.2-8.8 18.3l-5.1-.1c-5.5-.2-9.8-4.3-9.7-9.3 0-5.1 4.5-9 10.2-9zm40.2 77.2c.9 2.2 6.9 14.4 6.9 14.4H55.1s5.5-11.5 6.7-14.4c1-2.2 2.5-2.3 3.5 0z"></path>
+                    <path d="M114.9 47.9c-1.1 4.3-5.5 7.5-10.9 7.5h-5c-.3.1-.5.3-.4.6v53.3h-9.1L72 73.1c1.8-2 2.9-4.7 2.9-7.6 0-4.8-2.8-9.1-7-10.8v-4.9c0-2.1-1.8-3.6-3.9-3.6h-.2c-2.1 0-3.9 1.8-3.9 3.9v4.6c-4.6 1.5-8 5.8-8 11 0 3 1.2 5.8 3.1 7.8l-17 35.9H23.1c-5.7 0-10.2-4.6-10.2-10.3V29.7s0-.6.1 0c.8 4.8 5 8.5 10.1 8.6H100c-.1 0 14.6-1.3 14.9 9.6z"></path>
+                    <path d="M63.3 59.8c3.1 0 5.7 2.6 5.6 5.8 0 3.1-2.6 5.7-5.8 5.6-3.1 0-5.6-2.6-5.6-5.7 0-1.5.6-2.9 1.7-4 1.2-1.1 2.6-1.7 4.1-1.7zm2.3-3.3v-6c0-.7-.3-1.3-.9-1.6-.9-.5-2-.2-2.5.7-.2.3-.3.6-.2 1v5.8c-5 .8-8.5 5.5-7.7 10.6v.1c.4 2.4 1.7 4.6 3.7 6l-21.3 45.7c-.8 1.6-.7 3.6.4 5.1 1.6 2.3 4.7 2.9 7 1.3.8-.5 1.4-1.3 1.8-2.1L60 92.5c.9-2 3.3-2.9 5.4-1.9.8.4 1.5 1.1 1.9 1.9l14.5 30.3c1.2 2.5 4.2 3.5 6.7 2.3s3.5-4.2 2.3-6.7L69 72.9c4-3.2 4.7-9.1 1.5-13.1-1.2-1.6-2.9-2.7-4.9-3.3m14-43.6h-.1l5.3-9.2c.3-.5.1-1.1-.3-1.5-.5-.2-1-.1-1.3.3L77.6 12c-8.7-3.9-18.7-3.9-27.5 0l-5.4-9.4c-.2-.3-.6-.6-1-.6s-.8.2-1 .6c-.2.4-.2.8 0 1.1l5.4 9.2c-8.8 4.9-14.6 13.3-16 23.1h63.8c-1.5-9.8-7.5-18.2-16.3-23.1zM51.2 28l-.4.4c-.5.5-1.2.8-1.9.8h.1c-1.5 0-2.7-1.2-2.7-2.6v-.1c0-.7.3-1.4.8-1.9.9-1.1 2.6-1.3 3.7-.4 1.3.9 1.4 2.6.4 3.8zm27.4 1c-1.5.1-2.7-1.1-2.7-2.6v-.1c0-.7.3-1.4.8-1.9 1-1 2.7-1 3.8 0 .5.5.8 1.2.8 1.9 0 1.6-1.2 2.7-2.7 2.7zm27.1 29h-4.2c-.2.1-.4.3-.4.6v66.5c0 .3.2.5.5.5h4.4c5.1 0 9.2-4.2 9.2-9.2 0 0-.1-61.1 0-63.4.1-2.4-.5-.7-.7-.2-1.5 3.2-4.8 5.3-8.6 5.3h-.2z"></path>
+                    <circle cx="63.3" cy="65.5" r="3.2"></circle>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="MySQL">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                    <path d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927C17.811 4.565 5.257-2.16 1.633 6.682c-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="DigitalOcean">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                  <g fill-rule="nonzero"><path d="M63.724 110.725V92.543c19.352 0 34.282-19.008 26.817-39.118-2.765-7.438-8.57-13.499-16.312-16.254-19.905-7.162-38.982 7.714-38.982 26.722H17c0-30.303 29.582-54.27 61.93-44.352 14.1 4.407 25.158 15.427 29.582 29.476 9.953 32.231-14.1 61.708-44.788 61.708z"></path><path d="M64 92.543H45.753V74.637H64v17.906zm-18.247 14.05H31.929v-14.05h13.824v14.05zm-13.824-14.05H20.318v-11.57h11.611v11.57z"></path></g>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Apache">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                  <path d="M127.6 75.9l-.3-.5-.2-.1v-.4l-.1-.4-.2-.3-.4-.2h-.1l-.1-.2-.3-.2-.3-.2-.4-.1h-.2l-.4-.4-.5-.3-.6-.3-.6-.2h-.2l-.5-.6-.6-.4-.6-.3-.6-.2h-.1l-.6-.4-.8-.3-.5-.1-.5-.4-.5-.2-.5-.1-.5-.1h-.5l-.6.1h-.1l-.4-.6-.6-.4-.8-.2h-.9l-1 .2-.4.1-.8-.3-.8-.2h-2.6l-1-.4-.9-.3-.9-.1h-.6l-.8-.8-.9-.6-.8-.4-.8-.2h-.8l-.4.3-.5-.4-.6-.3-.7-.1-.6.1-.7-.3-.7-.2h-1l-1.1-.4-1.2-.3-1.1-.1h-.2l-1.2-.7-1.2-.3h-1.1.1l-1.7-.4-1.1-.1h-.5l-.7-.7-.8-.5-.9-.2-.9.1-.6.2-.8-.1h-1.8v-.2L76 60l-1.4-.2-1.3-.1-.5.1v-.1l-1-.1-1-.1h-.1l-1.1-.5-1.1-.3-1-.1h-.8l-1.1-.4-.9-.2h-1l-1.1-.8-.9-.3-.7-.1-.8-.4-1.2-.2h-1.1l-1.1-.5-1-.2h-.6l-1.2-.6-1-.3-1-.1-.3.1h.1l-1.4-.8-1.1-.4-1-.1h-.1l-.7-.5-.6-.3-.6-.2-.7-.1-.7.1-.8-.6-.7-.3-.9-.1h-.8l-.9.2-.2.1-1-.5-1-.3h-.9l-.8-.5-.7-.3h-.8l-.7.1-.7.2h-.1l-.7-.7-.6-.4-.7-.1-.7.1-.6.3-.2-.1-.3-.2-.3-.1-.3-.1h-.7l-.3.1-.5.3-.1.1-.9-.2h-.8l-.7.2-.6.5-.4.5-.3.7-.3.8-.2.8-.1.8-.1 1.6.1 1.8v.3c-.5-.2-1-.4-1.6-.6v-.4l.1-.6.1-1.3.1-1.2-.1-1.2-.1-.6-.1-.5-.1-.5-.2-.5-.2-.4-.3-.4-.3-.4-.6-.5.2.9.1.6.1.6.1.5.1.6.1.5v.1-.1l-.1-.3-.1-.3-.2-.6-.3-1-.1-.3-.2-1.3v-.4l.1-.7.1-.3.2-.7h-.2l-.5.6-.3.7-.3.7-.1.6V50l.1.7.1.7-.1-.1-.3-.4-.3-.4-.2-.5-.2-.5-.2-.5-.1-.7-.1-1-.7.6-.3.6-.2.6v.6l.1.6.2.6.3.6.1.2-.2.2-.6-.1-.1.2.4.2.4.3 1 .8.3.3.5.6.5.5.5.5.4.4.3.4.2.2c-5.7-2.3-11.7-5-19.1-8.5l-.4-.2.2.4c1 1.7 3.9 3.4 6.4 5 1.2.7 2.3 1.4 3.1 2 2.4 1.3 5.6 2.7 8.4 3.8h-.2l-2 .4-1.4.3-1.4.5-.7.3-.7.2-.6.4-.5.4-.5.5-.4.5-.3.6-.2.7.2.1.2-.2.5-.5.2-.2.6-.4.3-.2.3-.2.6-.3.4-.1.3-.1.7-.2.7-.1.6-.2 1.3-.7.6-.4.6-.4.5-.3.4-.2.3-.1.6.2-2.4 1.2-1.3.8-.7.5-.6.5-.6.5-.5.6-.3.5-.2.6-.1.6.1.7.4.9.5-1 .4-.6.4-.5.4-.4.4-.3.9-.6.4-.2-.1.4-.2.8v.9l.1 1 .3 1.1h.2l.2-1.1.3-1 .2-.5.4-.9.5-.9.8-1.4 1.1-1.8c.4.2.8.3 1.2.4l-.1.2-.7 1.4-.4.6-.3.7-.1.7-.2.7-.1.7v.7l.1.6.3.6.5.5.7.4.8.3.3.6.4.5.4.4.4.3.4.2.4.1h1v.1l.4.6.6.5.7.3h.8l.8-.2.2.2.6.6.6.4.7.3.8.1h.6l.6.4.7.3.8.2.6.5.8.4 1 .2 1.1.1h.2l.7.6.8.4.7.3.8.1.9-.2.4.2.6.3.6.1h.6l.6-.1.3.2 1 .3 1.1.1 1.3-.1.4.2.9.3 1 .1 1.4-.1h.1l.9.3 1 .1 1.1-.1.4.3 1 .4 1 .1 1.1-.1v-.1l.6.2h1l1.1-.2.7.2h.8l.8-.1 1.1.2.3.2 1 .3 1 .2 1.1.1 1.1-.1v-.1l.6.2.9.1.9.1v-.1l.6.2 1.2.4 1.3.3 1.4-.3v-.1h.2l.9.2.8.1h.9l.1.1.8.6.8.4H83l.8-.4.7-.6.9.1 1.1-.1h1.2v.1l.3.2 1.1.2 1.1-.1 1.1-.5h1l1.2.1 1-.1.6.1h1.4l.9-.1.5.2.6.1.6-.1.6-.3.1.1.8.1h2.5l.8-.3 1.1-.4h1.6l.8-.1.5.2.8.2.8.1.8-.1.9-.2.2.1.9.4.8.3h.8l.6-.3.5-.5.3.1.5.1.5.1h.5l.5-.1.5-.2.7.1.8-.1.7-.3h.7l.6-.1.6-.3.5-.4.1-.1.6.1.6-.1.5.1h.9l.4-.3.3-.2.1-.2h.1l.3-.1.3-.2.2-.5.1-.6h.2l.3-.1.1-.3.1.1v-.7zm-107-16.3l.2-.5.3.1-.2.2-.3.2zm.6-6.8l.1.5.1.5.1.5.3 1.6.2.7-.4-.2h.1l-.2-.1-.5-.4v-2.4l.1-.8.1.1z"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="Figma">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                  <path d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"></path>
+                  </svg>
+                </div>
+                <div className="tooltip tooltip-bottom" data-tip="VScode">
+                  <svg viewBox="0 0 128 128" className='tech-icon'>
+                  <path d="M3.656 45.043s-3.027-2.191.61-5.113l8.468-7.594s2.426-2.559 4.989-.328l78.175 59.328v28.45s-.039 4.468-5.757 3.976zm0 0"></path><path d="M23.809 63.379L3.656 81.742s-2.07 1.543 0 4.305l9.356 8.527s2.222 2.395 5.508-.328l21.359-16.238zm0 0M59.184 63.531l36.953-28.285-.239-28.297S94.32.773 89.055 3.99L39.879 48.851zm0 0"></path><path d="M90.14 123.797c2.145 2.203 4.747 1.48 4.747 1.48l28.797-14.222c3.687-2.52 3.171-5.645 3.171-5.645V20.465c0-3.735-3.812-5.024-3.812-5.024L98.082 3.38c-5.453-3.379-9.027.61-9.027.61s4.593-3.317 6.843 2.96v112.317c0 .773-.164 1.53-.492 2.214-.656 1.332-2.086 2.57-5.504 2.051zm0 0"></path>
+                  </svg>
+                </div>
+              </div>
+            </hgroup>
+          </article>
+        </div>
+      </section>
+      
+      <section id="projects">
+        <div className="grid grid-cols-2">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>projects</h1>
+        </div>
+        <div className="grid grid-cols-2">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>projects</h1>
+        </div>
+        <div className="grid grid-cols-2">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>projects</h1>
+        </div>
+        <div className="grid grid-cols-2">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>projects</h1>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section id="contact">
+        <div className="grid grid-cols-2">
+          <h1 className='basis-1/2 font-bold text-8xl text-end'>contact</h1>
+        </div>
+        <div className='grid grid-cols-2 gap-4'>
+          <article className=''>
+            <hgroup className=''>
+              <h3 className='text-end'>{`let's create`}</h3>
+              <p className='text-end'>
+              I’m actively looking for full-time work <span>👨🏽‍💻</span>, 
+              and currently available for freelance work and collaboration <span>☕️</span>.
+              </p>
+            </hgroup>
+            <hgroup className='flex flex-col'>
+              <h3 className='text-end'>
+                email
+              </h3>
+              <a href="mailto:jared.t.m.villanueva@gmail.com" className='text-end text-secondary-400'>jared.t.m.villanueva@gmail.com</a>
+            </hgroup>
+          </article>
+
+          <div className=''>
+            <Form/>
+          </div>
+        </div>
+      </section>
+
+      <footer className='text-center py-16 grid grid-rows-2'>
+          <div className='text-sm'>Designed and made with <span>🫶🏽</span></div>
+          <div className='text-md'>© 2023 JARED VILLANUEVA</div>
+        </footer>
     </main>
   )
 }
