@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background: var(--background-900);
+}
+
 * {
   color: var(--text-100);
   background: var(--background-900);
-  border-style: solid;
+  /* border-style: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: red; */
+  @apply cursor-none; 
 }
 
 h1, h2, h3 {
@@ -18,17 +23,25 @@ h1{
   font-weight:900;
   font-size: 128px;
   text-transform: uppercase;
-  color: var(--primary-400);
+  color: var(--text-100);
 }
 
 h2{
   font-weight: 700;
   font-size: 90px;
+  color: var(--primary-400);
 }
 
 h3 {
   font-weight: 700;
   font-size: 51px;
+  color: var(--primary-400);
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--text-100);
 }
 
 .tech-icon {
@@ -50,7 +63,7 @@ p {
 }
 
 .nav-link {
-  @apply hover:text-primary-400 ease-in-out duration-150;
+  @apply hover:text-primary-400 ease-in-out duration-150 uppercase;
 }
 
 .form-text-input {
@@ -61,7 +74,54 @@ p {
   @apply w-96 h-48 active:border-transparent focus:border-transparent focus:ring-0 border-b-2 bg-transparent p-4; 
 }
 
+html.lenis {
+  height: auto;
+}
 
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  /* mix-blend-mode: difference; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.cursor-text{
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.btn{
+  @apply cursor-none;
+}
 
 @layer base {
   :root {

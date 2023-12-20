@@ -22,7 +22,7 @@ const Page:React.FC<Params> = ({params: {slug}}) => {
             <h1 className="py-4 font-bold tedxt-3xl">{item?.title}</h1>
             <Image className="w-full" src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
             <div dangerouslySetInnerHTML={{__html : item.body.html}}/>
-            <Link className="text-blue-500" href="/portfolio"> Back to Portfolio </Link>
+            <Link className="text-blue-500" href="/#projects"> Back to Portfolio </Link>
            </div>
 }   
 

@@ -8,6 +8,7 @@ dotenv.config();
 const go = async () => {
 
   if (process.env.NOTION_SECRET) {
+    // @ts-ignore
     await NotionParse.parseNotion(process.env.NOTION_SECRET, './src/content', [
       {
         databaseId: process.env.NOTION_PORTFOLIO_DATABASE_ID || '',

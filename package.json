@@ -10,14 +10,19 @@
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
+    "@studio-freight/lenis": "^1.0.29",
+    "@studio-freight/react-lenis": "^0.0.38",
     "contentlayer": "^0.3.4",
+    "gsap": "^3.12.4",
+    "kursor": "^0.1.6",
     "next": "14.0.4",
     "next-contentlayer": "^0.3.4",
+    "next-transpile-modules": "^10.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@kodaps/notion-parse": "^0.0.14",
+    "@kodaps/notion-parse": "^0.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
