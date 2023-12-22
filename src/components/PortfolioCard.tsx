@@ -9,8 +9,13 @@ interface PortfolioCardProps {
 export const PortfolioCard:React.FC<PortfolioCardProps> = ({item}) => {
     return  (
         <div className="w-full">
-            <Image className="aspect-square object-cover rounded-lg" 
-            src={item.image.src} alt={item.title} width={item.image.width} height={item.image.height} />
+            <Image 
+                className="aspect-square object-cover" 
+                src={item.image.src} 
+                alt={item.title} 
+                width={item.image.width} 
+                height={item.image.height} 
+            />
             <div className="flex flow-row gap-2">
                 <h4>{item.title}</h4>
                 <Link href={"/portfolio/"+item.slug} className="flex flex-col justify-center">

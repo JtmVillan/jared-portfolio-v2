@@ -16,7 +16,7 @@ export const Header = () => {
             </svg>
           </a>
           <nav>
-            <div className='flex flex-row gap-2'>
+            <div className='flex flex-row gap-10'>
                 <a href="#about" className='nav-link' onClick={() => lenis.scrollTo('#about', {lerp:0.1})}>about</a>
                 <a href="#skills" className='nav-link' onClick={() => lenis.scrollTo('#skills', {lerp:0.1})}>skills</a>
                 <a href="#projects" className='nav-link' onClick={() => lenis.scrollTo('#projects', {lerp:0.1})}>projects</a>

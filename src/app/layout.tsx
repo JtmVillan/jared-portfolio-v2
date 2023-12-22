@@ -5,7 +5,7 @@ import SmoothScroll from '@/components/SmoothScroll'
 import React from "react";
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { Cursor } from '@/components/Cursor';
+// import { Cursor } from '@/components/Cursor';
 
 export const metadata: Metadata = {
   title: 'Jared Villanueva Portfolio',
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={`${clash.variable} ${satoshi.variable}`}>
-        <Cursor/>
+        {/* <Cursor/> */}
         <Header/>
         <div className='px-40'><SmoothScroll>{children}</SmoothScroll></div>
         <Footer/>

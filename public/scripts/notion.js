@@ -14,12 +14,12 @@ const go = async () => {
         databaseId: process.env.NOTION_PORTFOLIO_DATABASE_ID || '',
         contentType: 'Portfolio'
       },
-      /*{
-        databaseId: process.env.NOTION_POST_DATABASE_ID || '',
-        contentType: 'Post',
-        languageField: 'lang',
-        filterFields: [ 'translation', 'createdAt', 'status', 'Type']
-      },*/
+      // {
+      //   databaseId: process.env.NOTION_POST_DATABASE_ID || '',
+      //   contentType: 'Post',
+      //   languageField: 'lang',
+      //   filterFields: [ 'translation', 'createdAt', 'status', 'Type']
+      // },
     ])
   } else {
     console.error('No NOTION_SECRET environment variable set');

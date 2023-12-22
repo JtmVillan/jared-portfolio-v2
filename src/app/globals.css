@@ -9,10 +9,14 @@
 * {
   color: var(--text-100);
   background: var(--background-900);
-  /* border-style: solid;
+  border-style: solid;
   border-width: 1px;
-  border-color: red; */
-  @apply cursor-none; 
+  border-color: red;
+  /* @apply cursor-none;  */
+}
+
+header {
+  z-index: 99999;
 }
 
 h1, h2, h3 {
@@ -63,7 +67,7 @@ p {
 }
 
 .nav-link {
-  @apply hover:text-primary-400 ease-in-out duration-150 uppercase;
+  @apply hover:text-primary-400 ease-in-out duration-150 uppercase font-satoshi font-black;
 }
 
 .form-text-input {
@@ -94,7 +98,7 @@ html.lenis {
   pointer-events: none;
 }
 
-.custom-cursor {
+/* .custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -103,25 +107,19 @@ html.lenis {
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border: 2px solid white;
-}
+  border: 2px solid var(--text-100);
+} */
 
-.cursor-text{
-  font-size: 5px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  display: none;
-}
 
-.btn{
+/* .btn{
   @apply cursor-none;
-}
+} */
 
 @layer base {
   :root {
