@@ -20,10 +20,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      
       <body className={`${clash.variable} ${satoshi.variable}`}>
         {/* <Cursor/> */}
         <Header/>
+        testing
         <div className='px-40'><SmoothScroll>{children}</SmoothScroll></div>
         <Footer/>
       </body>
