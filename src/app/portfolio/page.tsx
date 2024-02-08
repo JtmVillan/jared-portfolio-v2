@@ -1,4 +1,4 @@
-import { PortfolioCard } from "@/components/PortfolioCard"
+import { PortfolioCard } from "@/components/UI/PortfolioCard"
 import { allPortfolios } from "contentlayer/generated"
 
 export default async function PortfolioIndex() {

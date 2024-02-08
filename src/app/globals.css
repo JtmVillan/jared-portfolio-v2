@@ -2,50 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background: var(--background-900);
+* {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: red; */
+  /* @apply cursor-none;  */
 }
 
-* {
-  color: var(--text-100);
-  background: var(--background-900);
-  border-style: solid;
-  border-width: 1px;
-  border-color: red;
-  /* @apply cursor-none;  */
+body {
+  @apply px-4 py-8;
 }
 
 header {
   z-index: 99999;
 }
 
-h1, h2, h3 {
+h1, h2 {
+  font-family: var(--clash-font);
+}
+
+p, a, article, li, h3{
+  /* font-family: var(--clash-font); */
   font-family: var(--satoshi-font);
 }
 
-h1{
-  font-weight:900;
-  font-size: 128px;
-  text-transform: uppercase;
-  color: var(--text-100);
+h3, p {
+  @apply text-text-200;
 }
 
-h2{
-  font-weight: 700;
-  font-size: 90px;
-  color: var(--primary-400);
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 51px;
-  color: var(--primary-400);
-}
-
-h4 {
-  font-weight: 500;
-  font-size: 36px;
-  color: var(--text-100);
+h2, h4 {
+  @apply text-text-200;
 }
 
 .tech-icon {
@@ -60,22 +46,59 @@ hgroup {
   @apply flex flex-col;
 }
 
-p {
-  font-family: var(--clash-font);
-  font-size: 24px;
-  font-weight: 300;
+.btn-style {
+  font-family: var(--satoshi-font);
+
+}
+
+.section-title {
+  @apply font-semibold text-5xl md:text-6xl lg:text-7xl uppercase text-primary-400 mb-4 tracking-wide;
+}
+
+.skills-title {
+  font-family: var(--sastoshi-font);
+  @apply group-hover:translate-x-2 ease-in-out duration-150 font-semibold text-3xl md:text-4xl lg:text-5xl;
+}
+
+.skills-container-article {
+  @apply pt-2 pb-4 text-text-950;
+}
+
+.skills-list {
+  @apply list-disc flex flex-col gap-1 pl-4 text-text-800;
+}
+
+.collapse-title-style {
+  @apply text-text-200 bg-background-900 peer-checked:bg-background-200 peer-checked:text-text-900 rounded-t-lg;
+}
+
+.collapse-text-style {
+  @apply text-text-200 bg-background-900 peer-checked:bg-background-200 peer-checked:text-text-900 rounded-b-lg;
+}
+
+.tech-subtitle {
+  font-family: var(--satoshi-font);
+  @apply font-medium text-lg text-neutral-100;
+}
+
+article {
+  @apply text-text-100;
+}
+
+.contact-link-title {
+  @apply font-bold pb-1;
 }
 
 .nav-link {
-  @apply hover:text-primary-400 ease-in-out duration-150 uppercase font-satoshi font-black;
+  @apply text-text-200 hover:text-primary-400 ease-in-out duration-150 font-satoshi font-medium text-lg;
 }
 
 .form-text-input {
-  @apply w-96 h-12 active:border-transparent focus:border-transparent border-b-2 bg-transparent p-4;
+  @apply w-11/12 h-12 outline-none border-b-2 border-b-background-300 bg-transparent text-text-200 p-4;
 }
 
 .form-text-area {
-  @apply w-96 h-48 active:border-transparent focus:border-transparent focus:ring-0 border-b-2 bg-transparent p-4; 
+  @apply w-11/12 h-48 outline-none focus:ring-0 border-b-2 border-b-background-300 bg-transparent text-text-200 p-4; 
 }
 
 html.lenis {
@@ -97,29 +120,6 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
-
-/* .custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid var(--text-100);
-} */
-
-
-/* .btn{
-  @apply cursor-none;
-} */
 
 @layer base {
   :root {

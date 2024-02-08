@@ -63,8 +63,13 @@ export const Form = () => {
                 field="message"
                 errors={state.errors}
             />
-            <button type="submit" disabled={state.submitting} 
-                className="btn btn-outline btn-secondary"> Send Message </button>
+            <div className="flex justify-start">
+                <button 
+                    type="submit" disabled={state.submitting} 
+                    className="btn btn-outline btn-secondary btn-lg"> 
+                    Send Message 
+                </button>
+            </div>
         </form>
     )
 };

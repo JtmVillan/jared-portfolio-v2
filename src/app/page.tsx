@@ -1,13 +1,12 @@
-import { Hero } from '@/components/Hero'
-import { About } from '@/components/About'
-import { Skills } from '@/components/Skills'
-import { Projects } from '@/components/Projects'
-import { Contact } from '@/components/Contact'
-import { Footer } from '../components/Footer'
+import { Hero } from '@/components/sections/Hero'
+import { About } from '@/components/sections/About'
+import { Skills } from '@/components/sections/Skills'
+import { Projects } from '@/components/sections/Projects'
+import { Contact } from '@/components/sections/Contact'
 
 export default function Home() {
   return (
-    <main className='grid grid-rows gap-40'>
+    <main id="home" className='grid grid-rows gap-20'>
       <Hero/>
       <About/>
       <Skills/>

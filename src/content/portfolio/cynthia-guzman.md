@@ -14,4 +14,4 @@ title: Cynthia Guzman
 slug: cynthia-guzman
 
 ---
-teehee here is where the body goes, in the content/portfolio section dumbass
+undefined
